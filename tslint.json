@@ -1,5 +1,8 @@
 {
   "rules": {
+    "deprecation": {
+      "severity": "warning"
+    },
     "import-blacklist": false,
     "typeof-compare": false
   }

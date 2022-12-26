@@ -1,43 +1,52 @@
 import { Renderer2, ElementRef, AfterContentInit, QueryList, ChangeDetectorRef, OnDestroy } from "@angular/core";
-import { SuiTransition } from "../../transition/index";
-import { HandledEvent, KeyCode } from "../../../misc/util/index";
+import { SuiTransition } from "../../transition/internal";
+import { HandledEvent, KeyCode } from "../../../misc/util/internal";
 import { DropdownService } from "../services/dropdown.service";
 import "element-closest";
+import * as ɵngcc0 from '@angular/core';
 export declare class SuiDropdownMenuItem {
     private _renderer;
     element: ElementRef;
-    readonly isDisabled: boolean;
+    get isDisabled(): boolean;
     private _isSelected;
-    isSelected: boolean;
+    get isSelected(): boolean;
+    set isSelected(value: boolean);
     selectedClass: string;
     childDropdownMenu: SuiDropdownMenu;
-    readonly hasChildDropdown: boolean;
+    get hasChildDropdown(): boolean;
     constructor(_renderer: Renderer2, element: ElementRef);
     performClick(): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<SuiDropdownMenuItem, never>;
+    static ɵdir: ɵngcc0.ɵɵDirectiveDefWithMeta<SuiDropdownMenuItem, ".item", never, {}, {}, ["childDropdownMenu"]>;
 }
 export declare class SuiDropdownMenu extends SuiTransition implements AfterContentInit, OnDestroy {
-    element: ElementRef;
     private _service;
     private _transitionController;
     menuTransition: string;
     menuTransitionDuration: number;
-    service: DropdownService;
+    get service(): DropdownService;
+    set service(value: DropdownService);
+    set parentElement(value: ElementRef);
     private _itemsQueryInternal;
     private _itemsQueryOverride;
-    items: QueryList<SuiDropdownMenuItem>;
-    private readonly _itemsQuery;
-    private readonly _items;
+    set items(items: QueryList<SuiDropdownMenuItem>);
+    private get _itemsQuery();
+    private get _items();
     selectedItems: SuiDropdownMenuItem[];
     menuAutoSelectFirst: boolean;
     menuSelectedItemClass: string;
-    private _documentKeyDownListener;
+    private _parentKeyDownListener;
     constructor(renderer: Renderer2, element: ElementRef, changeDetector: ChangeDetectorRef);
     onClick(e: HandledEvent & MouseEvent): void;
-    onDocumentKeyDown(e: KeyboardEvent): void;
+    onParentKeyDown(e: KeyboardEvent): void;
     resetSelection(): void;
     updateSelection(selectedItem: SuiDropdownMenuItem, keyCode: KeyCode): SuiDropdownMenuItem;
     scrollToItem(item: SuiDropdownMenuItem): void;
     ngAfterContentInit(): void;
-    private onItemsChanged();
+    private onItemsChanged;
     ngOnDestroy(): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<SuiDropdownMenu, never>;
+    static ɵdir: ɵngcc0.ɵɵDirectiveDefWithMeta<SuiDropdownMenu, "[suiDropdownMenu]", never, { "menuTransition": "menuTransition"; "menuTransitionDuration": "menuTransitionDuration"; "menuAutoSelectFirst": "menuAutoSelectFirst"; "menuSelectedItemClass": "menuSelectedItemClass"; }, {}, ["_itemsQueryInternal"]>;
 }
+
+//# sourceMappingURL=dropdown-menu.d.ts.map

@@ -1,8 +1,9 @@
 import { OnInit, ElementRef, Renderer2, EventEmitter, ViewContainerRef, AfterViewInit } from "@angular/core";
-import { IDynamicClasses, SuiComponentFactory } from "../../../misc/util/index";
-import { TransitionController } from "../../transition/index";
+import { IDynamicClasses, SuiComponentFactory } from "../../../misc/util/internal";
+import { TransitionController } from "../../transition/internal";
 import { ModalControls, ModalResult } from "../classes/modal-controls";
 import { ModalConfig, ModalSize } from "../classes/modal-config";
+import * as ɵngcc0 from '@angular/core';
 export declare class SuiModal<T, U> implements OnInit, AfterViewInit {
     private _renderer;
     private _element;
@@ -10,21 +11,25 @@ export declare class SuiModal<T, U> implements OnInit, AfterViewInit {
     isClosable: boolean;
     closeResult: U;
     controls: ModalControls<T, U>;
-    readonly approve: ModalResult<T>;
-    readonly deny: ModalResult<U>;
+    get approve(): ModalResult<T>;
+    get deny(): ModalResult<U>;
     onApprove: EventEmitter<T>;
     onDeny: EventEmitter<U>;
     onDismiss: EventEmitter<void>;
     private _modalElement;
     size: ModalSize;
+    isCentered: boolean;
     private _isFullScreen;
-    isFullScreen: boolean;
+    get isFullScreen(): boolean;
+    set isFullScreen(fullScreen: boolean);
     isBasic: boolean;
     private _mustScroll;
     private _mustAlwaysScroll;
-    mustScroll: boolean;
+    get mustScroll(): boolean;
+    set mustScroll(mustScroll: boolean);
     private _isInverted;
-    isInverted: boolean;
+    get isInverted(): boolean;
+    set isInverted(inverted: boolean);
     transitionController: TransitionController;
     transition: string;
     transitionDuration: number;
@@ -32,15 +37,19 @@ export declare class SuiModal<T, U> implements OnInit, AfterViewInit {
     private _isClosing;
     templateSibling: ViewContainerRef;
     private _originalContainer?;
-    readonly dynamicClasses: IDynamicClasses;
+    get dynamicClasses(): IDynamicClasses;
     constructor(_renderer: Renderer2, _element: ElementRef, _componentFactory: SuiComponentFactory);
     ngOnInit(): void;
     ngAfterViewInit(): void;
     loadConfig<V>(config: ModalConfig<V, T, U>): void;
-    private dismiss(callback?);
+    private dismiss;
     close(): void;
-    private updateScroll();
+    private updateScroll;
     onClick(e: MouseEvent): void;
     onDocumentKeyUp(e: KeyboardEvent): void;
     onDocumentResize(): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<SuiModal<any, any>, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<SuiModal<any, any>, "sui-modal", never, { "isFullScreen": "isFullScreen"; "mustScroll": "mustScroll"; "isInverted": "isInverted"; "isClosable": "isClosable"; "closeResult": "closeResult"; "size": "size"; "isBasic": "isBasic"; "isCentered": "isCentered"; "transition": "transition"; "transitionDuration": "transitionDuration"; }, { "onApprove": "approved"; "onDeny": "denied"; "onDismiss": "dismissed"; }, never, ["*"]>;
 }
+
+//# sourceMappingURL=modal.d.ts.map

@@ -1,16 +1,24 @@
 import { ElementRef, Renderer2 } from "@angular/core";
+import * as ɵngcc0 from '@angular/core';
 export declare class SuiCollapse {
     private _element;
     private _renderer;
+    get isExpanded(): boolean;
     private _isExpanded;
-    private readonly _isCollapsed;
+    get isCollapsed(): boolean;
+    get isCollapsing(): boolean;
     private _isCollapsing;
     private _pristine;
-    suiCollapse: boolean;
+    get suiCollapse(): boolean;
+    set suiCollapse(value: boolean);
     collapseDuration: number;
-    private readonly _animationDuration;
+    private get _animationDuration();
     constructor(_element: ElementRef, _renderer: Renderer2);
     hide(): void;
     show(): void;
-    private animate(startHeight, endHeight, removeOnComplete?, callback?);
+    private animate;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<SuiCollapse, never>;
+    static ɵdir: ɵngcc0.ɵɵDirectiveDefWithMeta<SuiCollapse, "[suiCollapse]", never, { "collapseDuration": "collapseDuration"; "suiCollapse": "suiCollapse"; }, {}, never>;
 }
+
+//# sourceMappingURL=collapse.d.ts.map

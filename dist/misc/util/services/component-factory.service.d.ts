@@ -1,4 +1,5 @@
 import { ApplicationRef, ComponentFactoryResolver, Injector, ComponentRef, Provider, Type, ViewContainerRef, TemplateRef } from "@angular/core";
+import * as ɵngcc0 from '@angular/core';
 export interface IImplicitContext<T> {
     $implicit?: T;
 }
@@ -15,4 +16,8 @@ export declare class SuiComponentFactory {
     moveToElement<T>(componentRef: ComponentRef<T>, element: Element): void;
     moveToDocumentBody<T>(componentRef: ComponentRef<T>): void;
     detachFromDocument<T>(componentRef: ComponentRef<T>): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<SuiComponentFactory, never>;
+    static ɵprov: ɵngcc0.ɵɵInjectableDef<SuiComponentFactory>;
 }
+
+//# sourceMappingURL=component-factory.service.d.ts.map

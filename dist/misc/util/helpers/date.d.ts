@@ -4,7 +4,7 @@ export declare enum DatePrecision {
     Month = 2,
     Date = 3,
     Hour = 4,
-    Minute = 5,
+    Minute = 5
 }
 export declare const DateUtil: {
     startOf(precision: DatePrecision, date: Date, resetAll?: boolean): Date;

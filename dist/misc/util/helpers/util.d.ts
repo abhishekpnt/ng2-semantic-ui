@@ -6,7 +6,7 @@ export declare enum KeyCode {
     Escape = 27,
     Enter = 13,
     Space = 32,
-    Backspace = 8,
+    Backspace = 8
 }
 export interface ITemplateRefContext<T> {
     $implicit: T;
@@ -24,10 +24,10 @@ export declare const Util: {
     Array: {
         range(n: number, offset?: number): number[];
         group<T>(items: T[], groupLength: number): T[][];
-        groupBy<T>(items: T[], field: keyof T): {
-            [name: string]: T[];
+        groupBy<T_1>(items: T_1[], field: keyof T_1): {
+            [name: string]: T_1[];
         };
-        flatten<T>(items: T[][]): T[];
+        flatten<T_2>(items: T_2[][]): T_2[];
     };
     String: {
         padLeft(str: string, length: number, padding: string): string;
@@ -36,7 +36,7 @@ export declare const Util: {
         parseBooleanAttribute(attributeValue: boolean): boolean;
     };
     Object: {
-        readValue<T, U>(object: T, path?: string | undefined): U;
+        readValue<T_3, U>(object: T_3, path?: string): U;
     };
     Math: {
         round(r: number, n: number): number;

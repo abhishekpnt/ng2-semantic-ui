@@ -13,7 +13,7 @@ export declare class DropdownService {
     autoCloseMode: DropdownAutoCloseType;
     parent?: DropdownService;
     children: DropdownService[];
-    readonly isNested: boolean;
+    get isNested(): boolean;
     constructor(autoCloseMode?: DropdownAutoCloseType);
     setOpenState(isOpen: boolean, reflectInParent?: boolean): void;
     setDisabledState(isDisabled: boolean): void;
@@ -21,5 +21,5 @@ export declare class DropdownService {
     registerChild(child: DropdownService): void;
     isChildRegistered(child: DropdownService): boolean;
     clearChildren(): void;
-    private delay(callback);
+    private delay;
 }

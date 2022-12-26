@@ -48,7 +48,7 @@
     "element-closest": "^2.0.2",
     "is-ua-webview": "^1.0.0",
     "popper.js": "^1.14.0",
-    "tslib": "^2.4.1"
+    "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1002.4",

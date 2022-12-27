@@ -1,9 +1,9 @@
 {
-  "name": "ng2-semantic-ui",
+  "name": "ng2-semantic-ui-v12",
   "main": "bundles/ng2-semantic-ui.umd.min.js",
   "module": "dist/public.js",
   "typings": "dist/public.d.ts",
-  "version": "0.10.0-alpha.6",
+  "version": "5.1.2",
   "description": "Angular Semantic UI Components",
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
     "lint": "npm run lib:lint && npm run demo:lint",
     "test": "npm run lib:test",
     "build": "npm run lib:build && npm run demo:build",
-    "build:prod": "npm run lib:build:prod && npm run demo:build:prod"
+    "build:prod": "npm run lib:build:prod"
   },
   "dependencies": {
     "@types/estree": "^0.0.47",

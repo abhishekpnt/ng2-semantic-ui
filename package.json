@@ -47,7 +47,7 @@
     "date-fns": "2.0.0-alpha.1",
     "element-closest": "^2.0.2",
     "is-ua-webview": "^1.0.0",
-    "popper.js": "^1.14.0"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",
@@ -88,7 +88,7 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-remap-istanbul": "~0.4.0",
     "ng-packagr": "^3.0.0",
-    "popper.js": "^1.14.0",
+    "popper.js": "^1.16.1",
     "prismjs": "~1.6.0",
     "rxjs": "^6.0.0",
     "ts-node": "~5.0.1",

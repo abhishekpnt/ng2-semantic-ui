@@ -43,7 +43,7 @@
     "build:prod": "npm run lib:build:prod && npm run demo:build:prod"
   },
   "dependencies": {
-    "bowser": "^1.7.2",
+    "bowser": "^1.9.4",
     "date-fns": "2.0.0-alpha.1",
     "element-closest": "^2.0.2",
     "is-ua-webview": "^1.0.0",
@@ -70,7 +70,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "@types/prismjs": "~1.4.18",
-    "bowser": "^1.7.2",
+    "bowser": "^1.9.4",
     "core-js": "^2.5.4",
     "date-fns": "2.0.0-alpha.1",
     "element-closest": "^2.0.2",

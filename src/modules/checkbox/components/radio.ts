@@ -1,6 +1,6 @@
 import {
     Component, Directive, Input, Output, HostListener, HostBinding,
-    EventEmitter, ViewChild, ElementRef, ContentChildren, AfterContentInit, QueryList
+    EventEmitter, ViewChild, ElementRef
 } from "@angular/core";
 import {
     ICustomValueAccessorHost, customValueAccessorFactory, CustomValueAccessor,

@@ -3,5 +3,5 @@ export {
     SearchService,
     LookupFn,
     FilterFn,
-    IResultContext
 } from "./internal";
+export * from "../../misc/util/helpers/util"

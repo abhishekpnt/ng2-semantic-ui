@@ -15,7 +15,7 @@
     ]
   },
   "angularCompilerOptions": {
-    "enableIvy": false,
+    "enableIvy": true,
     "compilationMode": "partial"
   },
   "exclude": [

@@ -1,7 +1,1 @@
-export {
-    SuiTransitionModule,
-    SuiTransition,
-    Transition,
-    TransitionDirection,
-    TransitionController
-} from "./internal";
+export * from "./internal";

@@ -1,4 +1,1 @@
-export {
-    SuiSelectModule,
-    IOptionContext
-} from "./internal";
+export * from "./internal";

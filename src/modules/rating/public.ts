@@ -1,3 +1,1 @@
-export {
-    SuiRatingModule
-} from "./internal";
+export * from "./internal";

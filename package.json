@@ -70,7 +70,6 @@
     "@types/node": "^12.11.1",
     "@types/prismjs": "~1.4.18",
     "bowser": "^1.7.2",
-    "codelyzer": "^5.1.2",
     "core-js": "^2.5.4",
     "date-fns": "2.0.0-alpha.1",
     "element-closest": "^2.0.2",

@@ -18,7 +18,7 @@ export abstract class SuiSelectBase<T, U> implements AfterContentInit, OnDestroy
     public dropdownService:DropdownService;
     public searchService:SearchService<T, U>;
 
-    @ViewChild(SuiDropdownMenu)
+    @ViewChild(SuiDropdownMenu, { static: true })
     protected _menu:SuiDropdownMenu;
 
     // Keep track of all of the rendered select options. (Rendered by the user using *ngFor).
@@ -58,7 +58,7 @@ export abstract class SuiSelectBase<T, U> implements AfterContentInit, OnDestroy
         return this.searchService.isSearching;
     }
 
-    @ViewChild(SuiSelectSearch)
+    @ViewChild(SuiSelectSearch, { static: true })
     private _internalSearch?:SuiSelectSearch;
 
     @ContentChild(SuiSelectSearch)
@@ -301,11 +301,12 @@ export abstract class SuiSelectBase<T, U> implements AfterContentInit, OnDestroy
         this._renderedSubscriptions = [];
 
         this._renderedOptions.forEach(ro => {
-            // Slightly delay initialisation to avoid change after checked errors. TODO - look into avoiding this!
-            setTimeout(() => this.initialiseRenderedOption(ro));
-
+           
             this._renderedSubscriptions.push(ro.onSelected.subscribe(() => this.selectOption(ro.value)));
         });
+
+         // Slightly delay initialisation to avoid change after checked errors. TODO - look into avoiding this!
+         setTimeout(() => this._renderedOptions.forEach(ro => this.initialiseRenderedOption(ro)));
 
         // If no options have been provided, autogenerate them from the rendered ones.
         if (this.searchService.options.length === 0 && !this.searchService.optionsLookup) {

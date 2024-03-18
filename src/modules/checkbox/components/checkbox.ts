@@ -52,7 +52,7 @@ export class SuiCheckbox implements ICustomValueAccessorHost<boolean> {
         return this.isDisabled ? "disabled" : undefined;
     }
 
-    @ViewChild("checkbox")
+    @ViewChild("checkbox", { static: true })
     private _checkboxElement:ElementRef;
 
     constructor() {
@@ -67,12 +67,12 @@ export class SuiCheckbox implements ICustomValueAccessorHost<boolean> {
     }
 
     @HostListener("mousedown", ["$event"])
-    public onMouseDown(event):void {
+    public onMouseDown(event:any):void {
         event.preventDefault();
     }
 
     @HostListener("click", ["$event"])
-    public onClick(e):void {
+    public onClick(e:any):void {
         if (!this.isDisabled && !this.isReadonly) {
             this.toggle();
             this.focusCheckbox();
@@ -80,7 +80,7 @@ export class SuiCheckbox implements ICustomValueAccessorHost<boolean> {
     }
 
     @HostListener("focusout", ["$event"])
-    public onFocusOut(e):void {
+    public onFocusOut(e:any):void {
         this.onTouched.emit();
     }
 

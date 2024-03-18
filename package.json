@@ -68,7 +68,6 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
-    "@types/eslint": "",
     "@types/prismjs": "~1.4.18",
     "bowser": "^1.7.2",
     "core-js": "^2.5.4",

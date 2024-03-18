@@ -40,10 +40,10 @@
     "lint": "npm run lib:lint && npm run demo:lint",
     "test": "npm run lib:test",
     "build": "npm run lib:build && npm run demo:build",
-    "build:prod": "npm run lib:build:prod"
+    "build:prod": "npm run lib:build:prod && npm run demo:build:prod"
   },
   "dependencies": {
-    "@types/estree": "^0.0.47",
+    "@types/estree": "1.0.5",
     "bowser": "^1.7.2",
     "date-fns": "2.0.0-alpha.1",
     "element-closest": "^2.0.2",
@@ -68,6 +68,7 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "@types/eslint": "",
     "@types/prismjs": "~1.4.18",
     "bowser": "^1.7.2",
     "core-js": "^2.5.4",
@@ -92,7 +93,7 @@
     "rxjs": "6.6.7",
     "ts-node": "~5.0.1",
     "tslint": "~6.1.0",
-    "typescript": "4.3.5",
+    "typescript": "4.2.3",
     "web-animations-js": "^2.3.2",
     "zone.js": "~0.11.8"
   }

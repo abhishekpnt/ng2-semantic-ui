@@ -4,10 +4,10 @@
   "description": "Angular Semantic UI Components",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edcarroll/ng2-semantic-ui/tree/master"
+    "url": "https://github.com/project-sunbird/ng2-semantic-ui/tree/master"
   },
   "bugs": {
-    "url": "https://github.com/edcarroll/ng2-semantic-ui/tree/master/issues"
+    "url": "https://github.com/project-sunbird/ng2-semantic-ui/tree/master/issues"
   },
   "author": "https://github.com/edcarroll/ng2-semantic-ui/graphs/contributors",
   "keywords": [

@@ -1,6 +1,8 @@
 export * from "./behaviors/public";
 export * from "./collections/public";
 export * from "./modules/public";
-
 export * from "./misc/public";
-export { SuiModule } from "./index";
+export * from "./misc/internal";
+export * from "./sui.module";
+
+

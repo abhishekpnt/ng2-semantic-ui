@@ -18,7 +18,7 @@ import { CollapsePageComponents } from "./modules/collapse/collapse.page";
 import { DatepickerPageComponents } from "./modules/datepicker/datepicker.page";
 import { DimmerPageComponents } from "./modules/dimmer/dimmer.page";
 import { DropdownPageComponents } from "./modules/dropdown/dropdown.page";
-import { ModalPageComponents, ConfirmModalComponent } from "./modules/modal/modal.page";
+import { ModalPageComponents } from "./modules/modal/modal.page";
 import { PopupPageComponents } from "./modules/popup/popup.page";
 import { ProgressPageComponents } from "./modules/progress/progress.page";
 import { RatingPageComponents } from "./modules/rating/rating.page";

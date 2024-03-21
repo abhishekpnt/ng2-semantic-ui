@@ -13,6 +13,7 @@ export enum CalendarViewType {
 }
 export type CalendarViewResult = [Date, CalendarViewType];
 
+@Directive()
 export abstract class CalendarView implements AfterViewInit, OnDestroy {
     private _type:CalendarViewType;
     private _service:CalendarService;

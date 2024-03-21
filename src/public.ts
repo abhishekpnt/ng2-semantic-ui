@@ -1,5 +1,5 @@
 
-export { SuiModule } from "./index";
+export { SuiModule } from "./sui.module";
 
 export * from "./behaviors/localization/locales/interfaces/values";
 export * from "./behaviors/localization//services/localization.service";

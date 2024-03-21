@@ -2,7 +2,7 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../temp",
-    "module": "es2015",
+    "module": "ES2022",
     "moduleResolution": "node",
     "declaration": false,
     "sourceMap": true,
@@ -10,11 +10,10 @@
     "experimentalDecorators": true,
     "lib": [
       "dom",
-      "es2015"
+      "ES2022"
     ]
   },
   "angularCompilerOptions": {
-    "enableIvy": true,
     "compilationMode": "partial"
   },
   "exclude": [

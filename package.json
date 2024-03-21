@@ -44,16 +44,17 @@
   },
   "dependencies": {
     "@types/estree": "1.0.5",
-    "@types/ws": "^8.5.4",
-    "bowser": "^1.7.2",
-    "date-fns": "2.0.0-alpha.1",
-    "element-closest": "^2.0.2",
-    "is-ua-webview": "^1.0.0",
-    "popper.js": "^1.14.0",
-    "tslib": "^2.0.0"
+    "@types/ws": "8.5.4",
+    "bowser": "2.11.0",
+    "date-fns": "3.6.0",
+    "element-closest": "3.0.2",
+    "is-ua-webview": "1.1.2",
+    "popper.js": "1.16.1",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "16.2.12",
+    "@angular/cdk": "16.2.12",
     "@angular/animations": "^16.2.12",
     "@angular/cli": "^16.2.12",
     "@angular/common": "^16.2.12",

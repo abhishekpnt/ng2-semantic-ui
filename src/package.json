@@ -1,13 +1,13 @@
 {
-  "name": "ng2-semantic-ui-v9",
-  "version": "0.0.4",
+  "name": "@project-sunbird/ng2-semantic-ui",
+  "version": "6.0.0",
   "description": "Angular Semantic UI Components",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edcarroll/ng2-semantic-ui/tree/master"
+    "url": "https://github.com/project-sunbird/ng2-semantic-ui/tree/master"
   },
   "bugs": {
-    "url": "https://github.com/edcarroll/ng2-semantic-ui/tree/master/issues"
+    "url": "https://github.com/project-sunbird/ng2-semantic-ui/tree/master/issues"
   },
   "author": "https://github.com/edcarroll/ng2-semantic-ui/graphs/contributors",
   "keywords": [
@@ -20,18 +20,18 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "bowser": "^1.7.2",
-    "date-fns": "2.0.0-alpha.1",
-    "element-closest": "^2.0.2",
-    "extend": "^3.0.1",
-    "is-ua-webview": "^1.0.0",
-    "popper.js": "^1.14.0"
+    "bowser": "2.11.0",
+    "date-fns": "3.6.0",
+    "element-closest": "3.0.2",
+    "is-ua-webview": "1.1.2",
+    "popper.js": "^1.16.1",
+    "tslib": "^2.6.2"
   },
   "peerDependencies": {
-    "@angular/common": ">= 9.1.13",
-    "@angular/compiler": ">= 9.1.13",
-    "@angular/core": ">= 9.1.13",
-    "@angular/forms": ">= 9.1.13",
-    "rxjs": "6.6.7"
+    "@angular/common": ">= 11.2.14",
+    "@angular/compiler": ">= 11.2.14",
+    "@angular/core": ">= 11.2.14",
+    "@angular/forms": ">= 11.2.14",
+    "rxjs": ">= 6.0.0"
   }
 }

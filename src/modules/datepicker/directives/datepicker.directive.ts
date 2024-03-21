@@ -9,7 +9,9 @@ import {
 } from "../../../misc/util/internal";
 import { IDatepickerLocaleValues, RecursivePartial, SuiLocalizationService } from "../../../behaviors/localization/internal";
 import { SuiPopupComponentController, PopupAfterOpen, PopupConfig, PopupTrigger } from "../../popup/internal";
-import { SuiDatepicker, DatepickerMode } from "../components/datepicker";
+import { SuiDatepicker } from "../components/datepicker";
+import { DatepickerMode } from "../classes/datepicker-mode";
+
 import { CalendarConfig, YearConfig, MonthConfig, DatetimeConfig, TimeConfig, DateConfig } from "../classes/calendar-config";
 
 @Directive({

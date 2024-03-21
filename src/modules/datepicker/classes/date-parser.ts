@@ -1,4 +1,4 @@
-import { DatepickerMode } from "../components/datepicker";
+import { DatepickerMode } from "../classes/datepicker-mode";
 import { DateFnsParser } from "../helpers/date-fns";
 import { IDatepickerLocaleValues, IDatepickerFormatsLocaleValues } from "../../../behaviors/localization/internal";
 

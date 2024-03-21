@@ -39,7 +39,7 @@ export * from "./modules/datepicker/classes/calendar-config";
 export * from "./modules/datepicker/classes/calendar-mappings";
 export * from "./modules/datepicker/classes/date-comparer";
 export * from "./modules/datepicker/classes/date-parser";
-// export * from "./modules/datepicker/classes/datepicker-mode";
+export * from "./modules/datepicker/classes/datepicker-mode";
 
 
 export * from "./modules/datepicker/components/calendar-view-title";

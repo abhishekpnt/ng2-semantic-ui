@@ -2,15 +2,11 @@ import {
     Component, ViewChild, HostBinding, Input, AfterViewInit, HostListener,
     EventEmitter, Output, Directive, ElementRef, TemplateRef, Renderer2
 } from "@angular/core";
-import { Util, ITemplateRefContext, IFocusEvent } from "../../../misc/util/internal";
+import { Util, ITemplateRefContext, IFocusEvent, IResultContext } from "../../../misc/util/internal";
 import { DropdownService, SuiDropdownMenu } from "../../dropdown/internal";
 import { ISearchLocaleValues, RecursivePartial, SuiLocalizationService } from "../../../behaviors/localization/internal";
 import { SearchService } from "../services/search.service";
 import { LookupFn, FilterFn } from "../helpers/lookup-fn";
-
-export interface IResultContext<T> extends ITemplateRefContext<T> {
-    query:string;
-}
 
 @Component({
     selector: "sui-search",

@@ -101,3 +101,9 @@ $ npm run test
 ## License
 
 MIT © [Edward Carroll](https://github.com/edcarroll)
+
+## Versions
+
+| release branch    | npm package version | Angular Version |
+|-------------------|---------------------|-----------------|
+| 8.0.0_v15         |      8.0.0          |     Ng V15      |

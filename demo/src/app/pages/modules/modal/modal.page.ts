@@ -29,9 +29,9 @@ export const exampleTemplateTemplate = exampleTemplateModalTemplate + `
 `;
 
 const exampleComponentModalTemplate = `
-<div class="header">{{ modal.context.title }}</div>
+<div class="header">{{ modal['context']['title'] }}</div>
 <div class="content">
-    <p>{{ modal.context.question }}</p>
+    <p>{{ modal['context']['question']}}</p>
 </div>
 <div class="actions">
     <button class="ui red button" (click)="modal.deny(undefined)">Cancel</button>
@@ -266,7 +266,7 @@ interface IConfirmModalContext {
     template: exampleComponentModalTemplate
 })
 export class ConfirmModalComponent {
-    constructor(public modal:SuiModal<IConfirmModalContext, void, void>) {}
+    constructor(public modal:SuiModal<IConfirmModalContext, void>) {}
 }
 
 export class ConfirmModal extends ComponentModalConfig<IConfirmModalContext, void, void> {

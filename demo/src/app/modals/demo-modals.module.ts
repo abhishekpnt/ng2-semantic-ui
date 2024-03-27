@@ -17,10 +17,6 @@ import { ConfirmModalComponent } from "./confirm.modal";
     exports: [
         AlertModalComponent,
         ConfirmModalComponent
-    ],
-    entryComponents: [
-        AlertModalComponent,
-        ConfirmModalComponent
     ]
 })
 export class DemoModalsModule {}

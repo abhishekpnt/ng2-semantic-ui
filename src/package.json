@@ -1,6 +1,6 @@
 {
   "name": "@project-sunbird/ng2-semantic-ui",
-  "version": "8.0.0",
+  "version": "8.0.2",
   "description": "Angular Semantic UI Components",
   "repository": {
     "type": "git",
@@ -28,10 +28,10 @@
     "tslib": "^2.6.2"
   },
   "peerDependencies": {
-    "@angular/common": ">= 15.2.10",
-    "@angular/compiler": ">= 15.2.10",
-    "@angular/core": ">= 15.2.10",
-    "@angular/forms": ">= 15.2.10",
+    "@angular/common": ">= 16.2.12",
+    "@angular/compiler": ">= 16.2.12",
+    "@angular/core": ">= 16.2.12",
+    "@angular/forms": ">= 16.2.12",
     "rxjs": ">= 6.0.0"
   }
 }

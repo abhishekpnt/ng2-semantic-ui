@@ -73,9 +73,6 @@ import { TestPage } from "./development/test/test.page";
         // Development
         TestPage
     ],
-    exports: [],
-    entryComponents: [
-        ConfirmModalComponent
-    ]
+    exports: []
 })
 export class DemoPagesModule {}

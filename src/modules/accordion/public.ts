@@ -1,3 +1,1 @@
-export {
-    SuiAccordionModule
-} from "./internal";
+export * from "./internal";

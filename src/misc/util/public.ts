@@ -1,3 +1,1 @@
-export {
-    SuiUtilityModule
-} from "./internal";
+export * from "./internal";

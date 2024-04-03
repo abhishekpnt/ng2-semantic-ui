@@ -9,9 +9,9 @@ interface IAlertModalContext {
 @Component({
     selector: "demo-modal-alert",
     template: `
-<div class="header" *ngIf="modal.context.title">{{ modal.context.title }}</div>
+<div class="header" *ngIf="modal['context']['title']">{{ modal['context']['title'] }}</div>
 <div class="content">
-    <p>{{ modal.context.message }}</p>
+    <p>{{ modal['context']['message'] }}</p>
 </div>
 <div class="actions">
     <button class="ui green button" (click)="modal.approve(undefined)" autofocus>OK</button>
@@ -19,7 +19,7 @@ interface IAlertModalContext {
 `
 })
 export class AlertModalComponent {
-    constructor(public modal:SuiModal<IAlertModalContext, void, void>) {}
+    constructor(public modal:SuiModal<IAlertModalContext, void>) {}
 }
 
 export class AlertModal extends ComponentModalConfig<IAlertModalContext, void, void> {

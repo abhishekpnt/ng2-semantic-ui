@@ -30,7 +30,7 @@
     "lib:compile:w": "ng build lib --watch",
     "lib:compile:prod": "ng build lib --prod && npm run lib:compile:locales",
     "lib:build": "npm run lib:lint && npm run lib:compile",
-    "lib:build:prod": "npm run lib:lint && npm run lib:compile:prod",
+    "lib:build:prod": "npm run lib:compile:prod",
     "demo:serve": "ng serve demo --host 0.0.0.0",
     "demo:lint": "ng lint demo",
     "demo:compile": "ng build demo",
@@ -43,13 +43,13 @@
     "build:prod": "npm run lib:build:prod && npm run demo:build:prod"
   },
   "dependencies": {
-    "bowser": "^1.7.2",
-    "date-fns": "2.0.0-alpha.1",
-    "element-closest": "^2.0.2",
-    "is-ua-webview": "^1.0.0",
-    "popper.js": "^1.14.0",
+    "bowser": "2.11.0",
+    "date-fns": "3.6.0",
+    "element-closest": "3.0.2",
+    "is-ua-webview": "1.1.2",
+    "popper.js": "^1.16.1",
     "tslib": "^1.10.0"
-  },
+    },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.15",
     "@angular-devkit/build-ng-packagr": "~0.901.15",

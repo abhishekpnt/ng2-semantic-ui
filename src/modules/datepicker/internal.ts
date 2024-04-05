@@ -2,6 +2,8 @@ export * from "./classes/calendar-config";
 export * from "./classes/calendar-mappings";
 export * from "./classes/date-comparer";
 export * from "./classes/date-parser";
+export * from "./classes/datepicker-mode";
+
 
 export * from "./components/calendar-view-title";
 export * from "./components/datepicker";

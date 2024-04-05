@@ -15,7 +15,9 @@ export enum KeyCode {
 interface IRecursiveObject { [name:string]:IRecursiveObject; }
 
 export interface ITemplateRefContext<T> { $implicit:T; }
-
+export interface IResultContext<T> extends ITemplateRefContext<T> {
+    query:string;
+}
 export interface IAugmentedElement extends Element {
     closest(selector:string):IAugmentedElement;
 }

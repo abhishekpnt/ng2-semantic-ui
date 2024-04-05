@@ -3,7 +3,7 @@ import {
     Input, TemplateRef
 } from "@angular/core";
 import { ITemplateRefContext, SuiComponentFactory } from "../../../misc/util/internal";
-import { IResultContext } from "./search";
+import { IResultContext } from "../../../misc/util/helpers/util";
 
 // See https://github.com/Microsoft/TypeScript/issues/13449.
 const templateRef = TemplateRef;

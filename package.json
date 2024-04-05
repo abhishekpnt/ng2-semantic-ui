@@ -55,6 +55,7 @@
     "@angular-devkit/build-ng-packagr": "~0.1002.4",
     "@angular/animations": "^10.2.5",
     "@angular/cli": "~10.2.4",
+    "@angular-devkit/core":"10.2.4",
     "@angular/common": "^10.2.5",
     "@angular/compiler": "^10.2.5",
     "@angular/compiler-cli": "^10.2.5",

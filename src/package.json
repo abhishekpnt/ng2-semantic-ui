@@ -1,6 +1,6 @@
 {
   "name": "@project-sunbird/ng2-semantic-ui",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "description": "Angular Semantic UI Components",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "bowser": "2.11.0",
-    "date-fns": "3.6.0",
+    "date-fns": "2.0.0-alpha.1",
     "element-closest": "3.0.2",
     "is-ua-webview": "1.1.2",
     "popper.js": "^1.16.1",

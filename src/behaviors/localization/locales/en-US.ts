@@ -5,10 +5,10 @@ const enUS:IPartialLocaleValues = {
         firstDayOfWeek: 0,
         formats: {
             time: "h:mm A",
-            datetime: "MMMM D, YYYY h:mm A",
-            date: "MMMM D, YYYY",
-            month: "MMMM YYYY",
-            year: "YYYY"
+            datetime: "MMMM D, yyyy h:mm A",
+            date: "MMMM D, yyyy",
+            month: "MMMM yyyy",
+            year: "yyyy"
         }
     }
 };

@@ -28,10 +28,10 @@ const enGB:ILocaleValues = {
         ],
         formats: {
             time: "h:mm A",
-            datetime: "D MMMM YYYY h:mm A",
-            date: "D MMMM YYYY",
-            month: "MMMM YYYY",
-            year: "YYYY"
+            datetime: "D MMMM yyyy h:mm A",
+            date: "D MMMM yyyy",
+            month: "MMMM yyyy",
+            year: "yyyy"
         },
         firstDayOfWeek: 1
     },

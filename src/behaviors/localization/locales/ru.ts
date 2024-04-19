@@ -24,10 +24,10 @@ const ru:IPartialLocaleValues = {
         ],
         formats: {
             time: "HH:mm",
-            datetime: "dd.MM.yyyy HH:mm",
-            date: "dd.MM.yyyy",
-            month: "MMMM yyyy",
-            year: "yyyy"
+            datetime: "dd.MM.YYYY HH:mm",
+            date: "dd.MM.YYYY",
+            month: "MMMM YYYY",
+            year: "YYYY"
         },
         firstDayOfWeek: 1
     },

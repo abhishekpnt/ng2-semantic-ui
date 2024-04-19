@@ -25,10 +25,10 @@ const ge:IPartialLocaleValues = {
         ],
         formats: {
             time: "HH:mm",
-            datetime: "D MMMM yyyy HH:mm",
-            date: "D MMMM yyyy",
-            month: "MMMM yyyy",
-            year: "yyyy"
+            datetime: "D MMMM YYYY HH:mm",
+            date: "D MMMM YYYY",
+            month: "MMMM YYYY",
+            year: "YYYY"
         },
         firstDayOfWeek: 1
     },

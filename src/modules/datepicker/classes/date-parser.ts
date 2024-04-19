@@ -24,10 +24,10 @@ export class InternalDateParser extends DateParser {
     constructor(mode:DatepickerMode, locale:IDatepickerLocaleValues) {
         const internalFormats:IDatepickerFormatsLocaleValues = {
             time: "HH:mm",
-            datetime: "yyyy-MM-DDTHH:mm",
-            date: "yyyy-MM-dd",
-            month: "yyyy-MM",
-            year: "yyyy"
+            datetime: "YYYY-MM-DDTHH:mm",
+            date: "YYYY-MM-dd",
+            month: "YYYY-MM",
+            year: "YYYY"
         };
 
         super(internalFormats[mode], locale);
